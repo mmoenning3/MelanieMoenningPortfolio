@@ -135,6 +135,11 @@ h2, .h2 {
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
+h33, .h33 {
+  font-size: calc(1.3rem + 0.6vw);
+  color: var(--bs-gray-dark);
+  
+}
 @media (min-width: 1200px) {
   h3, .h3 {
     font-size: 1.75rem;
@@ -143,6 +148,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
+  color: var(--bs-white)
 }
 @media (min-width: 1200px) {
   h4, .h4 {
@@ -153,6 +159,11 @@ h4, .h4 {
 h5, .h5 {
   font-size: 1.25rem;
   color: var(--bs-gray-dark);
+}
+
+.h55, .h55 {
+  font-size: 1.25rem;
+  color: var(--bs-white);
 }
 
 h6, .h6 {
@@ -246,7 +257,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #17667f;
+  color: var(--bs-blue);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -2507,13 +2518,13 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #8ec0cf;
+  border-color: var(--bs-light);
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(29, 128, 159, 0.25);
 }
 .form-check-input:checked {
-  background-color: #1D809F;
-  border-color: #1D809F;
+  background-color: var(--bs-blue);
+  border-color: var(--bs-blue);
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
@@ -2522,8 +2533,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #1D809F;
-  border-color: #1D809F;
+  background-color: var(--bs-blue);
+  border-color: var(--bs-blue);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
